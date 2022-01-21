@@ -6,6 +6,6 @@ public class ExampleStep {
 
     @Given("Example")
     public void method(){
-        System.out.println("Inside");
+        System.out.println("Inside shshshsh");
     }
 }
