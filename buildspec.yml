@@ -3,11 +3,10 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo Entered the build phase...
-      - mvn clean install
-      - mvn surefire-report:report
-      - mvn test
+      - mvn clean test
       - mvn jacoco:report
+      - mvn surefire-report:report
+
   post_build:
     commands:
       - echo Build completed successfully
