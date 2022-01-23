@@ -6,6 +6,7 @@ phases:
       - echo Entered the build phase...
       - mvn clean install
       - mvn surefire-report:report
+      - mvn test
       - mvn jacoco:report
   post_build:
     commands:
