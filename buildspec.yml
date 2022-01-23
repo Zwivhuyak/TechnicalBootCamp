@@ -6,6 +6,7 @@ phases:
       - echo Entered the build phase...
       - mvn clean install
       - mvn surefire-report:report
+      - mvn jacoco:report
   post_build:
     commands:
       - echo Build completed successfully
@@ -19,3 +20,10 @@ reports:
     files: #Store all of the files
       - '**/*'
     base-directory: 'target/surefire-reports' # Location of the reports
+
+
+  jacoco-report:
+    files:
+      - 'target/site/jacoco/jacoco.xml'
+    file-format: 'JACOCOXML'
+
