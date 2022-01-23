@@ -5,7 +5,7 @@ phases:
     commands:
       - echo Entered the build phase...
       - mvn clean install
-      - mvn test
+      - mvn surefire-report:report
   post_build:
     commands:
       - echo Build completed successfully
@@ -15,7 +15,7 @@ artifacts :
   discard-paths: yes
 
 reports:
-  arn:aws:codebuild:us-west-2:016604952143:report-group/TechnicalBootCampReport:
-    file:
+  SurefireReports: # CodeBuild will create a report group called "SurefireReports".
+    files: #Store all of the files
       - '**/*'
-    base-directory: 'target/cucumber-reports'
+    base-directory: 'target/surefire-reports' # Location of the reports
