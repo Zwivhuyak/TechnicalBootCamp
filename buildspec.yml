@@ -18,4 +18,4 @@ reports:
   UnitTests:
     file:
       - '**/*'
-    base-directory: 'target/sunfire-reports'
+    base-directory: 'target/cucumber-reports'
