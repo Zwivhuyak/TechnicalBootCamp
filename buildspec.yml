@@ -15,7 +15,7 @@ artifacts :
   discard-paths: yes
 
 reports:
-  UnitTests:
+  arn:aws:codebuild:us-west-2:016604952143:report-group/TechnicalBootCampReport:
     file:
       - '**/*'
     base-directory: 'target/cucumber-reports'
