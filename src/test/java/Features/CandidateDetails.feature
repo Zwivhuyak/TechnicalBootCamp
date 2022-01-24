@@ -9,5 +9,4 @@ Feature: Data Inputs
    Examples:
    |name|
    |Zwivhuya|
-   |Lucky   |
-   |Khoza   |
+
