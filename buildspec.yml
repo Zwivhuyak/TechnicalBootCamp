@@ -18,3 +18,9 @@ reports:
       - '**/*'
     base-directory: 'target/surefire-reports' # Location of the reports
 
+    jacoco-report:
+      files:
+        - 'target/my-reports/jacoco.xml'
+      file-format: 'JACOCOXML'
+
+
