@@ -8,7 +8,7 @@ public class ExampleStep {
     @Given("Example")
     public void method() throws InterruptedException {
 
-        Assert.assertEquals("mna","mna");
+        Assert.assertEquals("mnaa","mna");
 
         System.out.println("Inside shshshsh");
     }
