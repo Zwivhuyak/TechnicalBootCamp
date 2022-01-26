@@ -8,8 +8,8 @@ public class ExampleStep {
     @Given("Example")
     public void method() throws InterruptedException {
 
-        Assert.assertEquals("mna","mna");
-        Thread.sleep(70000);
+        Assert.assertEquals("mna","mnaa");
+
         System.out.println("Inside shshshsh");
     }
 }
