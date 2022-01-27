@@ -10,6 +10,6 @@ public class ExampleStep {
 
         Assert.assertEquals("mna","mna");
 
-        System.out.println("Inside shshshsh");
+        System.out.println("Inside shashshsh");
     }
 }
