@@ -1,5 +1,5 @@
 Feature: Data Inputs
-  @tag
+@tag
  Scenario Outline: Testing different data inputs
 
    Given The user has been directed to the details dashboard
