@@ -11,6 +11,7 @@ public class TechnicalBootcampApplication {
 		SpringApplication.run(TechnicalBootcampApplication.class, args);
 
 
+
 	}
 
 }

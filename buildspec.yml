@@ -6,6 +6,7 @@ phases:
       java: corretto11
   build:
     commands:
+      - docker-compose up
       - mvn clean install
   post_build:
     commands:
