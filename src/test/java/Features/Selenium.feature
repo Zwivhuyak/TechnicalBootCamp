@@ -1,5 +1,5 @@
 Feature: Run Selenium Script in AWS or Local
-
+@selenium
   Scenario Outline: Excute your code
 
     Given that you have the configuration of the following environment : <Environment>

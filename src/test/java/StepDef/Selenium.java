@@ -31,7 +31,7 @@ public class Selenium {
 
             case "grid":
 
-                driver = new RemoteWebDriver(new URL("https://ec2-34-221-224-20.us-west-2.compute.amazonaws.com:4444"), DesiredCapabilities.chrome());
+                driver = new RemoteWebDriver(new URL("http://172.19.0.2:4444"), DesiredCapabilities.chrome());
 
         }
 
