@@ -9,4 +9,4 @@ Feature: Run Selenium Script in AWS or Local
 
     Examples:
     |Environment|Browser|url|Expected Title|
-    |grid |chrome |https://www.google.com/|hjfhjfjh|
+    |grid |chrome |https://www.facebook.com/|zwivhuya|
