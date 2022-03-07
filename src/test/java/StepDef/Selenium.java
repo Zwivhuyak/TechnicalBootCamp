@@ -6,6 +6,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -31,7 +32,12 @@ public class Selenium {
 
             case "grid":
 
-                driver = new RemoteWebDriver(new URL("http://172.19.0.2:4444"), DesiredCapabilities.chrome());
+                DesiredCapabilities dc = new DesiredCapabilities();
+                dc.setPlatform(Platform.LINUX);
+                //dc.setBrowserName("chrome");
+
+                driver = new RemoteWebDriver(new URL("http://0.0.0.0:4444"), dc);
+
 
         }
 

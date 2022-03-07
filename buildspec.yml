@@ -6,7 +6,7 @@ phases:
       java: corretto11
   build:
     commands:
-      - docker-compose up
+      - docker run -d -p 4444:4444 --shm-size="2g" selenium/standalone-firefox:4.1.2-20220217
       - mvn clean install
   post_build:
     commands:
