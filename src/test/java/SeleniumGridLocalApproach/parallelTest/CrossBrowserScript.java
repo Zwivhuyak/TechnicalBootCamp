@@ -33,20 +33,20 @@ public class CrossBrowserScript {
         //Check if parameter passed from TestNG is 'firefox'
         if(browser.equalsIgnoreCase("safari")){
             DesiredCapabilities dc = new DesiredCapabilities();
-            dc.setPlatform(Platform.WINDOWS);
+            dc.setPlatform(Platform.MAC);
             dc.setBrowserName("safari");
             
 
-            driver = new RemoteWebDriver(new URL("http://192.168.8.191:4444"),dc);
+            driver = new RemoteWebDriver(new URL("http://192.168.8.169:4444"),dc);
 
         }
         //Check if parameter passed as 'chrome'
         else if(browser.equalsIgnoreCase("chrome")){
             DesiredCapabilities dc = new DesiredCapabilities();
-            dc.setPlatform(Platform.WINDOWS);
+            dc.setPlatform(Platform.MAC);
             dc.setBrowserName("chrome");
 
-            driver = new RemoteWebDriver(new URL("http://192.168.8.191:4444"),dc);
+            driver = new RemoteWebDriver(new URL("http://192.168.8.169:4444"),dc);
         }
         //Check if parameter passed as 'Edge'
         else if(browser.equalsIgnoreCase("Edge")){

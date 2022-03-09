@@ -210,8 +210,12 @@
 			<version>4.2.0</version>
 			<scope>test</scope>
 		</dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-remote-driver</artifactId>
+        </dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
+        <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
 
 
 
