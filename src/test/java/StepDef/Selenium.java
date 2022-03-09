@@ -22,13 +22,10 @@ public class Selenium {
     public void that_you_have_the_configuration_of_the_following_environment_(String environment) throws Throwable {
         switch (environment){
             case "local":
-                ChromeOptions options = new ChromeOptions();
-                options.addArguments("use-fake-device-for-media-stream");
-                options.addArguments("use-fake-ui-for-media-stream");
-                System.setProperty("webdriver.chrome.driver", "src/test/java/Drivers/chromedriver");
-                ///System.setProperty("webdriver.chrome.driver", "src/main/resources/ChromeDriver/chromedriver.exe");
-                driver = new ChromeDriver(options);
+
+                driver = new ChromeDriver();
                 driver.manage().window().maximize();
+                driver.get("https://www.facebook.com/");
 
             case "grid":
 
