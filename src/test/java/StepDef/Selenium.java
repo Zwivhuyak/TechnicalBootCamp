@@ -31,7 +31,7 @@ public class Selenium {
 
                 DesiredCapabilities dc = new DesiredCapabilities();
                 dc.setPlatform(Platform.LINUX);
-                dc.setBrowserName("firefox");
+                dc.setBrowserName("chrome");
 
                 driver = new RemoteWebDriver(new URL("http://0.0.0.0:4444"), dc);
                 driver.get("https://www.facebook.com/");

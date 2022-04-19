@@ -10,4 +10,3 @@ Feature: Run Selenium Script in AWS or Local
     Examples:
     |Environment|Browser|url|Expected Title|
     |grid |chrome |https://www.facebook.com/|zwivhuya|
-    |grid |chrome |https://www.twitter.com/|Twitter. It’s what’s happening / Twitter|
