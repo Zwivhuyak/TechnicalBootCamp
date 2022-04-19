@@ -35,9 +35,8 @@ public class CrossBrowserScript {
             DesiredCapabilities dc = new DesiredCapabilities();
             dc.setPlatform(Platform.MAC);
             dc.setBrowserName("safari");
-            
 
-            driver = new RemoteWebDriver(new URL("http://192.168.8.169:4444"),dc);
+            driver = new RemoteWebDriver(new URL("http://192.168.8.223:4444"),dc);
 
         }
         //Check if parameter passed as 'chrome'
@@ -46,10 +45,15 @@ public class CrossBrowserScript {
             dc.setPlatform(Platform.MAC);
             dc.setBrowserName("chrome");
 
-            driver = new RemoteWebDriver(new URL("http://192.168.8.169:4444"),dc);
+            driver = new RemoteWebDriver(new URL("http://192.168.8.223:4444"),dc);
         }
         //Check if parameter passed as 'Edge'
-        else if(browser.equalsIgnoreCase("Edge")){
+        else if(browser.equalsIgnoreCase("fire")){
+            DesiredCapabilities dc = new DesiredCapabilities();
+            dc.setPlatform(Platform.MAC);
+            dc.setBrowserName("firefox");
+
+            driver = new RemoteWebDriver(new URL("http://192.168.8.223:4444"),dc);
 
         }
         else{
@@ -62,6 +66,10 @@ public class CrossBrowserScript {
     @Test
     public void goToGoogle() throws InterruptedException{
         driver.get("http://google.com");
+        driver.findElement(By.name("q")).sendKeys("Zwivhuya");
+        driver.findElement(By.name("btnK")).click();
+
+        Thread.sleep(5000);
 
 
 

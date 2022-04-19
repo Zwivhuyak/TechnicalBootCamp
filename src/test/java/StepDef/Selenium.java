@@ -31,7 +31,7 @@ public class Selenium {
 
                 DesiredCapabilities dc = new DesiredCapabilities();
                 dc.setPlatform(Platform.LINUX);
-                //dc.setBrowserName("chrome");
+                dc.setBrowserName("firefox");
 
                 driver = new RemoteWebDriver(new URL("http://0.0.0.0:4444"), dc);
 
