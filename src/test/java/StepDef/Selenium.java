@@ -37,20 +37,6 @@ public class Selenium {
                 driver.get("https://www.facebook.com/");
                 System.out.println(driver.getCapabilities());
 
-                dc.setPlatform(Platform.LINUX);
-                dc.setBrowserName("firefox");
-
-                driver = new RemoteWebDriver(new URL("http://0.0.0.0:4444"), dc);
-                driver.get("https://www.facebook.com/");
-                System.out.println(driver.getCapabilities());
-
-                dc.setPlatform(Platform.LINUX);
-                dc.setBrowserName("edge");
-
-                driver = new RemoteWebDriver(new URL("http://0.0.0.0:4444"), dc);
-                driver.get("https://www.facebook.com/");
-                System.out.println(driver.getCapabilities());
-
 
 
         }
