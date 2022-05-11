@@ -64,7 +64,7 @@ public class Selenium {
 
 
         Assert.assertEquals(expectedtitle,driver.getTitle());
-        Assert.assertEquals("Happy","Sad");
+
 
     }
 
