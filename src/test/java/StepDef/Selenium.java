@@ -52,7 +52,19 @@ public class Selenium {
     public void assert_the_web_title(String expectedtitle) throws Throwable {
         Thread.sleep(5000);
 
+        Assert.assertEquals("Happy","Happy");
+        Assert.assertEquals("Happy","Happy");
+        Assert.assertEquals("Happy","Happy");
+        Assert.assertEquals("Happy","Happy");
+        Assert.assertEquals("Happy","Happy");
+        Assert.assertEquals("Happy","Happy");
+
+
+
+
+
         Assert.assertEquals(expectedtitle,driver.getTitle());
+        Assert.assertEquals("Happy","Sad");
 
     }
 
